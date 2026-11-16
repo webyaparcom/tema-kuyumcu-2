@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Mihri Kuyum: ayarı damgalı altın yüzük, kolye, bilezik ve küpe vitrini; fiyat için danışın, ölçü ayarı atölyede. Demo site; içerik kurgusaldır.",
+    "en": "Mihri Jewellers: a showcase of hallmarked gold rings, necklaces, bangles and earrings; price on request, sizing in our workshop. Demo site; content is fictional.",
+    "ar": "مهري للمجوهرات: معرض لخواتم وقلائد وأساور وأقراط ذهبية مدموغة العيار؛ السعر عند الاستفسار وتعديل المقاس في الورشة. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "kuyumcu, altın yüzük, alyans, kolye, bilezik, ayar",
+    "en": "jeweller, gold ring, wedding band, necklace, bangle, karat",
+    "ar": "صائغ، خاتم ذهب، دبلة، قلادة، سوار، عيار"
+  },
+  "category": "Kurumsal",
+  "name": "Mihri Kuyum",
+  "domain": "kuyumcu-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "open-sans",
+    "heading": "cormorant-garamond",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#22395E",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "2px",
+    "--mx-radius-md": "4px",
+    "--mx-radius-lg": "6px",
+    "--mx-radius-xl": "8px"
+  },
+  "icon": "icon.png"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "7q593xuokp",
+  "name": {
+    "tr": "Ayar ve güvence",
+    "en": "Karat and care",
+    "ar": "العيار والضمان"
+  },
+  "description": {
+    "tr": "Ayar rehberi ve satış sonrası hizmetler.",
+    "en": "Karat guide and after-sales services.",
+    "ar": "دليل العيار وخدمات ما بعد البيع."
+  },
+  "keyword": {
+    "tr": "sss, soru cevap",
+    "en": "faq, questions",
+    "ar": "أسئلة وأجوبة"
+  },
+  "path": "sorular",
+  "icon": "help",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "w4nq35",
+      "ckykyu"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Ayar ve güvence",
+    "en": "Karat and care",
+    "ar": "العيار والضمان"
+  },
+  "date": "2026-11-16T11:23:21.001Z",
+  "update": "2026-11-16T11:41:50.548Z"
+}

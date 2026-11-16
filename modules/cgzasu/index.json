@@ -1,0 +1,52 @@
+{
+  "name": "Üst Logo Blok — logo renkli kare blokta, menü yanında",
+  "description": "Kenardan kenara çubuk; logo başta tam boy marka renkli bir blokta durur, menü yanında akar, dil ve düğme sonda. Etkin sayfanın altı kalın çizili. Dar ekranda blok + menü düğmesi. Marka işareti bir mühür bloğu gibi köşeye çakılı: logo menüden ayrılır, kimlik her ekranda baskın. Sayfalar site sayfalarından, dil seçici {{langbar}}, logo {{logo}}. Mobil menü erişilebilir (aria-expanded, Esc, odak). Renkler desing + var(--mx-site-*); mantıksal CSS → RTL.",
+  "version": "1.0.0",
+  "icon": "crop_square",
+  "category": "menu",
+  "subCategory": "logo-block",
+  "tags": [
+    "menu",
+    "logo-block",
+    "full-bleed",
+    "brand",
+    "dropdown",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "100%",
+    "bosluk": "0px",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "tel": "",
+    "logoimg": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "logoH": "44px",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "name": "ek bağlantı adı (dil sözlüğü)",
+      "url": "iç yol ya da dış adres (dış adres yeni sekmede)"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "data": [
+    {
+      "id": "68jtln02ip",
+      "name": {
+        "tr": "Koleksiyon",
+        "en": "Collection",
+        "ar": "المجموعة"
+      },
+      "description": {
+        "tr": "Yüzük, kolye, bilezik ve küpe; fiyat için danışın.",
+        "en": "Rings, necklaces, bangles and earrings; price on request.",
+        "ar": "خواتم وقلائد وأساور وأقراط؛ السعر عند الاستفسار."
+      },
+      "path": "hizmetler",
+      "icon": "work",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "kev618",
+          "rzfj4y"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Atölyemiz",
+        "en": "Our workshop",
+        "ar": "ورشتنا"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "aggkrn",
+          "hnlmfy"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "1979’dan beri el işçiliği altın takı; fiyat için danışın.",
+        "en": "Handmade gold jewellery since 1979; price on request.",
+        "ar": "حليّ ذهبية يدوية الصنع منذ 1979؛ السعر عند الاستفسار."
+      }
+    },
+    {
+      "id": "7q593xuokp",
+      "name": {
+        "tr": "Ayar ve güvence",
+        "en": "Karat and care",
+        "ar": "العيار والضمان"
+      },
+      "description": {
+        "tr": "Ayar rehberi ve satış sonrası hizmetler.",
+        "en": "Karat guide and after-sales services.",
+        "ar": "دليل العيار وخدمات ما بعد البيع."
+      },
+      "path": "sorular",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "w4nq35",
+          "ckykyu"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "cjxnvax85s",
+      "name": {
+        "tr": "Basında",
+        "en": "In the press",
+        "ar": "في الصحافة"
+      },
+      "description": {
+        "tr": "Kurgusal basın manşetleri.",
+        "en": "Fictional press headlines.",
+        "ar": "عناوين صحفية افتراضية."
+      },
+      "path": "referanslar",
+      "icon": "stars",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "xk27i9",
+          "rzfj4y"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "jrjsl6oa5k",
+      "name": {
+        "tr": "Randevu",
+        "en": "Book a visit",
+        "ar": "احجز موعدًا"
+      },
+      "description": {
+        "tr": "Özel gösterim randevusu.",
+        "en": "Private viewing appointment.",
+        "ar": "موعد عرض خاص."
+      },
+      "path": "teklif-al",
+      "icon": "request_quote",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "rzfj4y",
+          "dd99jq"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 5,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "dd99jq",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

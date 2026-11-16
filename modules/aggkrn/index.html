@@ -1,0 +1,139 @@
+<section class="modulex-zaman-kurulus-surgu{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-zaman-kurulus-surgu-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* zaman-kurulus-surgu — zaman-sekme-yil yıl sekmeleri (role=tab) ve panellerdir, zaman-ray/film-seridi yatay kaydırma şerididir; bu modül sürekli bir yıl kaydırıcısıdır (input range + çentikli cetvel + dolgu) ve aynı anda yalnız tek dönem sahnesi gösterir — kronoloji sürüklenerek okunur. */
+  .modulex-zaman-kurulus-surgu { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-zaman-kurulus-surgu *, .modulex-zaman-kurulus-surgu *::before, .modulex-zaman-kurulus-surgu *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-zaman-kurulus-surgu :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-zaman-kurulus-surgu :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-zaman-kurulus-surgu :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-zaman-kurulus-surgu :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-zaman-kurulus-surgu img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-zaman-kurulus-surgu) img { height: auto; }
+  .modulex-zaman-kurulus-surgu [hidden] { display: none !important; }
+  .modulex-zaman-kurulus-surgu :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-zaman-kurulus-surgu :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-zaman-kurulus-surgu-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-zaman-kurulus-surgu-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-zaman-kurulus-surgu--bassiz .modulex-zaman-kurulus-surgu-bas { display: none; }
+  .modulex-zaman-kurulus-surgu-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-zaman-kurulus-surgu-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-zaman-kurulus-surgu-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-zaman-kurulus-surgu-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-zaman-kurulus-surgu-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-zaman-kurulus-surgu-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-zaman-kurulus-surgu-dugme:hover { transform: translateY(-2px); }
+  .modulex-zaman-kurulus-surgu-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-zaman-kurulus-surgu-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-zaman-kurulus-surgu-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-zaman-kurulus-surgu { --oran: 0; }
+  .modulex-zaman-kurulus-surgu-sahne { display: grid; gap: 26px; }
+  .modulex-zaman-kurulus-surgu-surgu { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 12px 28px; padding: 22px 28px 16px; border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-zaman-kurulus-surgu-gosterge { display: inline-grid; place-items: center; min-width: 5.5ch; min-height: 44px; padding: 4px 12px; border-radius: 999px; background: --vurguBg--; color: --vurguText--; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .modulex-zaman-kurulus-surgu-kizak { display: grid; gap: 10px; padding-block-start: 8px; }
+  .modulex-zaman-kurulus-surgu-aralik { -webkit-appearance: none; appearance: none; width: 100%; height: 12px; margin: 0; border-radius: 999px; background: linear-gradient(to right, --accent-- 0 calc(14px + var(--oran) * (100% - 28px)), --cizgi-- 0); cursor: pointer; transition: background 0.3s ease; }
+  .modulex-zaman-kurulus-surgu-aralik:dir(rtl) { background: linear-gradient(to left, --accent-- 0 calc(14px + var(--oran) * (100% - 28px)), --cizgi-- 0); }
+  .modulex-zaman-kurulus-surgu-aralik::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; border: 5px solid --bg--; border-radius: 50%; background: --accent--; box-shadow: 0 0 0 2px --accent--, 0 6px 14px -4px color-mix(in srgb, --text-- 50%, transparent); transition: transform 0.2s ease; }
+  .modulex-zaman-kurulus-surgu-aralik::-moz-range-thumb { width: 18px; height: 18px; border: 5px solid --bg--; border-radius: 50%; background: --accent--; box-shadow: 0 0 0 2px --accent--; }
+  .modulex-zaman-kurulus-surgu-aralik:active::-webkit-slider-thumb { transform: scale(1.15); }
+  .modulex-zaman-kurulus-surgu-aralik:focus-visible { outline: 3px solid --accent--; outline-offset: 8px; }
+  .modulex-zaman-kurulus-surgu-cetvel { display: flex; justify-content: space-between; }
+  .modulex-zaman-kurulus-surgu-centik { display: grid; justify-items: center; width: 28px; }
+  .modulex-zaman-kurulus-surgu-tik { display: grid; justify-items: center; gap: 6px; padding: 0; border: 0; background: none; color: --muted--; font: inherit; font-size: 0.84rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; transition: color 0.2s ease; }
+  .modulex-zaman-kurulus-surgu-tik::before { content: ""; width: 2px; height: 10px; border-radius: 2px; background: --cizgi--; transition: background-color 0.2s ease, height 0.2s ease; }
+  .modulex-zaman-kurulus-surgu-tik:hover, .modulex-zaman-kurulus-surgu-tik[aria-current] { color: --text--; }
+  .modulex-zaman-kurulus-surgu-tik.modulex-zaman-kurulus-surgu--gecti::before, .modulex-zaman-kurulus-surgu-tik[aria-current]::before { background: --accent--; }
+  .modulex-zaman-kurulus-surgu-tik[aria-current]::before { height: 16px; }
+  .modulex-zaman-kurulus-surgu-donemler { display: grid; gap: 16px; }
+  .modulex-zaman-kurulus-surgu-donem { position: relative; display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr); align-items: center; gap: clamp(20px, 4vw, 56px); padding: clamp(24px, 4vw, 48px); overflow: hidden; border: 1px solid --cizgi--; border-radius: calc(--yuvarlak-- * 1.3); background: --bg--; }
+  .modulex-zaman-kurulus-surgu-donem--gorsel { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.2fr) minmax(0, 1fr); }
+  .modulex-zaman-kurulus-surgu--js .modulex-zaman-kurulus-surgu-donem { min-height: 320px; box-shadow: 0 30px 60px -44px color-mix(in srgb, --text-- 55%, transparent); }
+  .modulex-zaman-kurulus-surgu-dyil { color: --accentInk--; font-size: clamp(3.4rem, 9vw, 7.5rem); font-weight: 900; letter-spacing: -0.05em; line-height: 0.85; font-variant-numeric: tabular-nums; overflow-wrap: normal; }
+  .modulex-zaman-kurulus-surgu-donem--gorsel .modulex-zaman-kurulus-surgu-dyil { font-size: clamp(2.8rem, 5.6vw, 5.2rem); }
+  .modulex-zaman-kurulus-surgu-dgovde { display: grid; align-content: center; gap: 12px; }
+  .modulex-zaman-kurulus-surgu-dikon { color: --accentInk--; font-size: 30px; }
+  .modulex-zaman-kurulus-surgu-kbaslik { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 780; line-height: 1.2; }
+  .modulex-zaman-kurulus-surgu-kmetin { color: --muted--; font-size: 1.05rem; line-height: 1.75; }
+  .modulex-zaman-kurulus-surgu-gorsel { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: --yuvarlak--; }
+  .modulex-zaman-kurulus-surgu-donem.modulex-zaman-kurulus-surgu--gir { animation: modulex-zaman-kurulus-surgu-gir 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .modulex-zaman-kurulus-surgu-donem.modulex-zaman-kurulus-surgu--gir .modulex-zaman-kurulus-surgu-dyil { animation: modulex-zaman-kurulus-surgu-yil 0.7s ease both; }
+  @keyframes modulex-zaman-kurulus-surgu-gir { from { opacity: 0; transform: translateY(14px) scale(0.985); } to { opacity: 1; transform: none; } }
+  @keyframes modulex-zaman-kurulus-surgu-yil { from { opacity: 0; letter-spacing: 0.08em; } to { opacity: 1; letter-spacing: -0.05em; } }
+  @media (max-width: 1024px) {
+    .modulex-zaman-kurulus-surgu-donem--gorsel { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr); }
+    .modulex-zaman-kurulus-surgu-donem--gorsel .modulex-zaman-kurulus-surgu-gorsel { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
+  }
+  @media (max-width: 768px) {
+    .modulex-zaman-kurulus-surgu-surgu { grid-template-columns: minmax(0, 1fr); padding: 18px 16px 12px; }
+    .modulex-zaman-kurulus-surgu-gosterge { justify-self: start; }
+    .modulex-zaman-kurulus-surgu-tik { font-size: 0.7rem; }
+    .modulex-zaman-kurulus-surgu-centik:not(:first-child):not(:last-child) .modulex-zaman-kurulus-surgu-tik:not([aria-current]) bdi { visibility: hidden; }
+    .modulex-zaman-kurulus-surgu-donem, .modulex-zaman-kurulus-surgu-donem--gorsel { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .modulex-zaman-kurulus-surgu--js .modulex-zaman-kurulus-surgu-donem { min-height: 0; }
+  }
+  .modulex-zaman-kurulus-surgu-bag { color: inherit; text-decoration: none; }
+  .modulex-zaman-kurulus-surgu-bag::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+  .modulex-zaman-kurulus-surgu-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-kurulus-surgu :is(.modulex-zaman-kurulus-surgu-baslik, .modulex-zaman-kurulus-surgu-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-kurulus-surgu-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-zaman-kurulus-surgu { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-zaman-kurulus-surgu *, .modulex-zaman-kurulus-surgu *::before, .modulex-zaman-kurulus-surgu *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-zaman-kurulus-surgu";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const kurulusSurgu = (s, P, az) => {
+        const kok = s.querySelector("[data-surgu]");
+        const r = kok && kok.querySelector("input[type=range]");
+        const D = [...s.querySelectorAll("." + P + "-donem")];
+        if (!r || D.length < 2) return;
+        s.classList.add(P + "--js");
+        kok.hidden = false;
+        const tik = [...kok.querySelectorAll("[data-git]")];
+        const sira = kok.querySelector("[data-gsira]");
+        const dl = document.documentElement.lang || undefined;
+        let f = null;
+        try { f = new Intl.NumberFormat(dl); } catch (x) { f = null; }
+        const sayi = (v) => (f ? f.format(v) : String(v));
+        const sec = (i, ilk) => {
+          i = Math.max(0, Math.min(D.length - 1, i));
+          r.value = String(i);
+          D.forEach((d, j) => {
+            d.hidden = j !== i;
+            d.classList.remove(P + "--gir");
+          });
+          if (!ilk && !az) { void D[i].offsetWidth; D[i].classList.add(P + "--gir"); }
+          tik.forEach((t, j) => {
+            if (j === i) t.setAttribute("aria-current", "step"); else t.removeAttribute("aria-current");
+            t.classList.toggle(P + "--gecti", j < i);
+          });
+          s.style.setProperty("--oran", (i / (D.length - 1)).toFixed(3));
+          if (sira) sira.textContent = sayi(i + 1) + " / " + sayi(D.length);
+          r.setAttribute("aria-valuetext", [D[i].dataset.etiket, D[i].dataset.baslik].filter(Boolean).join(" · "));
+        };
+        r.addEventListener("input", () => sec(Number(r.value)));
+        tik.forEach((t) => t.addEventListener("click", () => { sec(Number(t.dataset.git)); r.focus(); }));
+        sec(Number(r.value) || 0, true);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      kurulusSurgu(s, P, az);
+    });
+  })();
+</script>

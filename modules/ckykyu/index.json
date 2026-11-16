@@ -1,0 +1,53 @@
+{
+  "name": "Özellik Rozet Şeridi — sertifika mühürleri ve açılır açıklama",
+  "description": "Sertifika, yetki ve güvenlik güvenceleri ortalı bir şeritte yuvarlak mühür rozetleri (kesik halka + ikon + kısa ad). Rozete tıklayınca şeridin altındaki tek açıklama çekmecesi o rozetin metni, varsa belge görseli ve bağlantısıyla açılır; çekmecenin oku seçilen rozete kayar. JS yokken tüm açıklamalar kart ızgarası. ozellik-ikon-serit statik bir yatay metin şerididir; bu modülde şerit yalnız mühür rozetlerinden oluşur, ayrıntı paylaşılan bir açılır çekmecede (oku rozete kayan tek panel) okunur — rozet + açıklama ayrık iskelet. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "workspace_premium",
+  "category": "ozellik",
+  "subCategory": "badge-strip",
+  "tags": [
+    "ozellik",
+    "badges",
+    "certificates",
+    "trust",
+    "disclosure",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "img": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "baslik": "özellik adı — dil sözlüğü (zorunlu)",
+      "metin": "açıklama — dil sözlüğü",
+      "ikon": "Material Symbols adı",
+      "img": "görsel yolu (destekleyen yerleşimde; ana görsel yoksa ilk görsel)",
+      "alt": "görsel alt metni — dil sözlüğü",
+      "url": "bağlantı",
+      "linkMetin": "bağlantı yazısı (yoksa eski `ctaLabel`, o da yoksa «Devamını oku»)"
+    }
+  }
+}

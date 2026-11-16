@@ -1,0 +1,115 @@
+<section class="modulex-ozellik-rozet-serit{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ozellik-rozet-serit-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* ozellik-rozet-serit — ozellik-ikon-serit statik bir yatay metin şerididir; bu modülde şerit yalnız mühür rozetlerinden oluşur, ayrıntı paylaşılan bir açılır çekmecede (oku rozete kayan tek panel) okunur — rozet + açıklama ayrık iskelet. */
+  .modulex-ozellik-rozet-serit { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ozellik-rozet-serit *, .modulex-ozellik-rozet-serit *::before, .modulex-ozellik-rozet-serit *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ozellik-rozet-serit :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ozellik-rozet-serit :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ozellik-rozet-serit :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ozellik-rozet-serit :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ozellik-rozet-serit img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ozellik-rozet-serit) img { height: auto; }
+  .modulex-ozellik-rozet-serit [hidden] { display: none !important; }
+  .modulex-ozellik-rozet-serit :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ozellik-rozet-serit :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ozellik-rozet-serit-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ozellik-rozet-serit-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ozellik-rozet-serit--bassiz .modulex-ozellik-rozet-serit-bas { display: none; }
+  .modulex-ozellik-rozet-serit-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ozellik-rozet-serit-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ozellik-rozet-serit-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ozellik-rozet-serit-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-ozellik-rozet-serit-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ozellik-rozet-serit-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ozellik-rozet-serit-dugme:hover { transform: translateY(-2px); }
+  .modulex-ozellik-rozet-serit-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ozellik-rozet-serit-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ozellik-rozet-serit-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ozellik-rozet-serit-rozetler { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(10px, 3vw, 30px); }
+  .modulex-ozellik-rozet-serit-rozet { display: grid; justify-items: center; gap: 10px; width: 136px; padding: 6px; border: 0; border-radius: 14px; background: transparent; color: --text--; font: inherit; text-align: center; }
+  .modulex-ozellik-rozet-serit:not(.modulex-ozellik-rozet-serit--rjs) .modulex-ozellik-rozet-serit-rozet { pointer-events: none; }
+  .modulex-ozellik-rozet-serit-muhur { position: relative; display: grid; place-items: center; width: 104px; height: 104px; border: 2px dashed --accent--; border-radius: 50%; background-color: --kartBg--; transition: transform 0.45s ease, background-color 0.3s ease, border-color 0.3s ease; }
+  .modulex-ozellik-rozet-serit-muhur::after { content: ""; position: absolute; inset: 9px; border: 3px solid color-mix(in srgb, --accent-- 35%, transparent); border-radius: 50%; transition: border-color 0.3s ease; }
+  .modulex-ozellik-rozet-serit-muhur .material-symbols-outlined { color: --accentInk--; font-size: 40px; transition: color 0.3s ease; }
+  .modulex-ozellik-rozet-serit-rozet:hover .modulex-ozellik-rozet-serit-muhur { transform: rotate(-12deg) scale(1.04); }
+  .modulex-ozellik-rozet-serit-rozet[aria-expanded="true"] .modulex-ozellik-rozet-serit-muhur { border-style: solid; background-color: --accent--; }
+  .modulex-ozellik-rozet-serit-rozet[aria-expanded="true"] .modulex-ozellik-rozet-serit-muhur::after { border-color: color-mix(in srgb, --accentText-- 45%, transparent); }
+  .modulex-ozellik-rozet-serit-rozet[aria-expanded="true"] .modulex-ozellik-rozet-serit-muhur .material-symbols-outlined { color: --accentText--; }
+  .modulex-ozellik-rozet-serit-rad { font-size: 0.9rem; font-weight: 750; line-height: 1.3; }
+  .modulex-ozellik-rozet-serit-cekmece { position: relative; margin-block-start: 26px; }
+  .modulex-ozellik-rozet-serit--rjs .modulex-ozellik-rozet-serit-cekmece { padding: clamp(20px, 3vw, 32px); border-block-start: 3px solid --accent--; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-ozellik-rozet-serit--rjs .modulex-ozellik-rozet-serit-cekmece::before { content: ""; position: absolute; inset-block-start: -13px; inset-inline-start: calc(var(--ok, 50%) - 10px); width: 20px; height: 10px; background: --accent--; clip-path: polygon(50% 0, 100% 100%, 0 100%); transition: inset-inline-start 0.35s ease; }
+  .modulex-ozellik-rozet-serit:not(.modulex-ozellik-rozet-serit--rjs) .modulex-ozellik-rozet-serit-cekmece { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+  .modulex-ozellik-rozet-serit:not(.modulex-ozellik-rozet-serit--rjs) .modulex-ozellik-rozet-serit-panel { padding: 20px; border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-ozellik-rozet-serit-panel { display: flex; align-items: flex-start; gap: 22px; }
+  .modulex-ozellik-rozet-serit--rjs .modulex-ozellik-rozet-serit-panel:not([hidden]) { animation: modulex-ozellik-rozet-serit-cekmece 0.35s ease both; }
+  .modulex-ozellik-rozet-serit-belge { flex: none; width: 116px; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 8px; box-shadow: 0 12px 24px -16px color-mix(in srgb, --text-- 70%, transparent); }
+  .modulex-ozellik-rozet-serit-pyazi { display: grid; flex: 1 1 auto; gap: 8px; max-width: 72ch; }
+  .modulex-ozellik-rozet-serit-pbaslik { font-size: 1.2rem; font-weight: 800; }
+  .modulex-ozellik-rozet-serit-pmetin { color: --muted--; line-height: 1.7; }
+  @keyframes modulex-ozellik-rozet-serit-cekmece { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-ozellik-rozet-serit-rozet { width: 100px; }
+    .modulex-ozellik-rozet-serit-muhur { width: 80px; height: 80px; }
+    .modulex-ozellik-rozet-serit-muhur .material-symbols-outlined { font-size: 32px; }
+    .modulex-ozellik-rozet-serit-panel { flex-direction: column; }
+  }
+  .modulex-ozellik-rozet-serit-git { display: inline-flex; align-items: center; gap: 6px; width: fit-content; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.25s ease; }
+  .modulex-ozellik-rozet-serit-git:hover { gap: 10px; }
+  .modulex-ozellik-rozet-serit-git .material-symbols-outlined { font-size: 18px; }
+  .modulex-ozellik-rozet-serit-ic > .modulex-ozellik-rozet-serit-cta { grid-column: 1 / -1; margin-block-start: 32px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ozellik-rozet-serit :is(.modulex-ozellik-rozet-serit-baslik, .modulex-ozellik-rozet-serit-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ozellik-rozet-serit-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ozellik-rozet-serit { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ozellik-rozet-serit *, .modulex-ozellik-rozet-serit *::before, .modulex-ozellik-rozet-serit *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ozellik-rozet-serit";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const rozetAc = (s, P) => {
+        const b = [...s.querySelectorAll("[data-rozet]")];
+        const p = [...s.querySelectorAll("[data-rozet-panel]")];
+        const kap = s.querySelector("[data-rozet-kap]");
+        if (!b.length || !kap) return;
+        s.classList.add(P + "--rjs");
+        const ok = (x) => {
+          const r = kap.getBoundingClientRect();
+          const q = x.getBoundingClientRect();
+          const rtl = getComputedStyle(s).direction === "rtl";
+          const v = rtl ? r.right - (q.left + q.width / 2) : q.left + q.width / 2 - r.left;
+          kap.style.setProperty("--ok", Math.round(Math.max(24, Math.min(r.width - 24, v))) + "px");
+        };
+        const acik = () => b.findIndex((x) => x.getAttribute("aria-expanded") === "true");
+        const ac = (i) => {
+          b.forEach((x, j) => x.setAttribute("aria-expanded", String(j === i)));
+          p.forEach((x, j) => { x.hidden = j !== i; });
+          kap.hidden = i < 0;
+          if (i > -1) ok(b[i]);
+        };
+        b.forEach((x, i) => x.addEventListener("click", () => ac(acik() === i ? -1 : i)));
+        window.addEventListener("resize", () => { const i = acik(); if (i > -1) ok(b[i]); }, { passive: true });
+        ac(0);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      rozetAc(s, P, az);
+    });
+  })();
+</script>
