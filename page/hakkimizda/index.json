@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Atölyemiz",
+    "en": "Our workshop",
+    "ar": "ورشتنا"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "aggkrn",
+      "hnlmfy"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "1979’dan beri el işçiliği altın takı; fiyat için danışın.",
+    "en": "Handmade gold jewellery since 1979; price on request.",
+    "ar": "حليّ ذهبية يدوية الصنع منذ 1979؛ السعر عند الاستفسار."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Atölyemiz",
+    "en": "Our workshop",
+    "ar": "ورشتنا"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T11:41:50.545Z",
+  "date": "2026-10-30"
+}

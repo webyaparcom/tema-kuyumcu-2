@@ -1,0 +1,40 @@
+{
+  "id": "68jtln02ip",
+  "name": {
+    "tr": "Koleksiyon",
+    "en": "Collection",
+    "ar": "المجموعة"
+  },
+  "description": {
+    "tr": "Yüzük, kolye, bilezik ve küpe; fiyat için danışın.",
+    "en": "Rings, necklaces, bangles and earrings; price on request.",
+    "ar": "خواتم وقلائد وأساور وأقراط؛ السعر عند الاستفسار."
+  },
+  "keyword": {
+    "tr": "Güvencemiz",
+    "en": "Our assurances",
+    "ar": "ضماناتنا"
+  },
+  "path": "hizmetler",
+  "icon": "work",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "kev618",
+      "rzfj4y"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Koleksiyon",
+    "en": "Collection",
+    "ar": "المجموعة"
+  },
+  "date": "2026-11-16T11:23:20.992Z",
+  "update": "2026-11-16T11:41:50.542Z"
+}

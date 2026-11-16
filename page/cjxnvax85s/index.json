@@ -1,0 +1,40 @@
+{
+  "id": "cjxnvax85s",
+  "name": {
+    "tr": "Basında",
+    "en": "In the press",
+    "ar": "في الصحافة"
+  },
+  "description": {
+    "tr": "Kurgusal basın manşetleri.",
+    "en": "Fictional press headlines.",
+    "ar": "عناوين صحفية افتراضية."
+  },
+  "keyword": {
+    "tr": "referans, müşteri yorumu",
+    "en": "reference, review",
+    "ar": "مرجع، تقييم"
+  },
+  "path": "referanslar",
+  "icon": "stars",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "xk27i9",
+      "rzfj4y"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Basında",
+    "en": "In the press",
+    "ar": "في الصحافة"
+  },
+  "date": "2026-11-16T11:23:21.005Z",
+  "update": "2026-11-16T11:41:50.551Z"
+}
