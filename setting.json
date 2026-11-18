@@ -4,12 +4,16 @@
   "description": {
     "tr": "Mihri Kuyum: ayarı damgalı altın yüzük, kolye, bilezik ve küpe vitrini; fiyat için danışın, ölçü ayarı atölyede. Demo site; içerik kurgusaldır.",
     "en": "Mihri Jewellers: a showcase of hallmarked gold rings, necklaces, bangles and earrings; price on request, sizing in our workshop. Demo site; content is fictional.",
-    "ar": "مهري للمجوهرات: معرض لخواتم وقلائد وأساور وأقراط ذهبية مدموغة العيار؛ السعر عند الاستفسار وتعديل المقاس في الورشة. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "مهري للمجوهرات: معرض لخواتم وقلائد وأساور وأقراط ذهبية مدموغة العيار؛ السعر عند الاستفسار وتعديل المقاس في الورشة. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Mihri Kuyum: Schaufenster mit gestempelten Goldringen, Halsketten, Armbändern und Ohrringen; Preise auf Anfrage, Größenanpassung in der Werkstatt. Demo-Website; die Inhalte sind fiktiv.",
+    "ru": "Mihri Kuyum: витрина золотых колец, колье, браслетов и серёг с пробирным клеймом; цены по запросу, подгонка размера в мастерской. Демо-сайт; содержание вымышленное."
   },
   "keyword": {
     "tr": "kuyumcu, altın yüzük, alyans, kolye, bilezik, ayar",
     "en": "jeweller, gold ring, wedding band, necklace, bangle, karat",
-    "ar": "صائغ، خاتم ذهب، دبلة، قلادة، سوار، عيار"
+    "ar": "صائغ، خاتم ذهب، دبلة، قلادة، سوار، عيار",
+    "de": "Juwelier, Goldring, Ehering, Halskette, Armreif, Feingehalt",
+    "ru": "ювелир, золотое кольцо, обручальное кольцо, колье, браслет, проба"
   },
   "category": "Kurumsal",
   "name": "Mihri Kuyum",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

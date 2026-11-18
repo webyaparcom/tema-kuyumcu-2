@@ -3,17 +3,23 @@
   "name": {
     "tr": "Koleksiyon",
     "en": "Collection",
-    "ar": "المجموعة"
+    "ar": "المجموعة",
+    "de": "Kollektion",
+    "ru": "Коллекция"
   },
   "description": {
     "tr": "Yüzük, kolye, bilezik ve küpe; fiyat için danışın.",
     "en": "Rings, necklaces, bangles and earrings; price on request.",
-    "ar": "خواتم وقلائد وأساور وأقراط؛ السعر عند الاستفسار."
+    "ar": "خواتم وقلائد وأساور وأقراط؛ السعر عند الاستفسار.",
+    "de": "Ringe, Ketten, Armbänder und Ohrringe; Preis auf Anfrage.",
+    "ru": "Кольца, цепочки, браслеты и серьги; цена по запросу."
   },
   "keyword": {
     "tr": "Güvencemiz",
     "en": "Our assurances",
-    "ar": "ضماناتنا"
+    "ar": "ضماناتنا",
+    "de": "Unsere Garantie",
+    "ru": "Наша гарантия"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Koleksiyon",
     "en": "Collection",
-    "ar": "المجموعة"
+    "ar": "المجموعة",
+    "de": "Kollektion",
+    "ru": "Коллекция"
   },
   "date": "2026-11-16T11:23:20.992Z",
   "update": "2026-11-16T11:41:50.542Z"
