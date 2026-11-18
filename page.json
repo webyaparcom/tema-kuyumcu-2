@@ -5,12 +5,16 @@
       "name": {
         "tr": "Koleksiyon",
         "en": "Collection",
-        "ar": "المجموعة"
+        "ar": "المجموعة",
+        "de": "Kollektion",
+        "ru": "Коллекция"
       },
       "description": {
         "tr": "Yüzük, kolye, bilezik ve küpe; fiyat için danışın.",
         "en": "Rings, necklaces, bangles and earrings; price on request.",
-        "ar": "خواتم وقلائد وأساور وأقراط؛ السعر عند الاستفسار."
+        "ar": "خواتم وقلائد وأساور وأقراط؛ السعر عند الاستفسار.",
+        "de": "Ringe, Ketten, Armbänder und Ohrringe; Preis auf Anfrage.",
+        "ru": "Кольца, цепочки, браслеты и серьги; цена по запросу."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Atölyemiz",
         "en": "Our workshop",
-        "ar": "ورشتنا"
+        "ar": "ورشتنا",
+        "de": "Unsere Werkstatt",
+        "ru": "Наша мастерская"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "1979’dan beri el işçiliği altın takı; fiyat için danışın.",
         "en": "Handmade gold jewellery since 1979; price on request.",
-        "ar": "حليّ ذهبية يدوية الصنع منذ 1979؛ السعر عند الاستفسار."
+        "ar": "حليّ ذهبية يدوية الصنع منذ 1979؛ السعر عند الاستفسار.",
+        "de": "Handgefertigter Goldschmuck seit 1979; Preis auf Anfrage.",
+        "ru": "Ручная золотая ювелирная работа с 1979 года; цена по запросу."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Ayar ve güvence",
         "en": "Karat and care",
-        "ar": "العيار والضمان"
+        "ar": "العيار والضمان",
+        "de": "Karat & Pflege",
+        "ru": "Карат и уход"
       },
       "description": {
         "tr": "Ayar rehberi ve satış sonrası hizmetler.",
         "en": "Karat guide and after-sales services.",
-        "ar": "دليل العيار وخدمات ما بعد البيع."
+        "ar": "دليل العيار وخدمات ما بعد البيع.",
+        "de": "Größenratgeber und Kundendienst.",
+        "ru": "Размерный гид и послепродажное обслуживание."
       },
       "path": "sorular",
       "icon": "help",
@@ -85,12 +97,16 @@
       "name": {
         "tr": "Basında",
         "en": "In the press",
-        "ar": "في الصحافة"
+        "ar": "في الصحافة",
+        "de": "In der Presse",
+        "ru": "В прессе"
       },
       "description": {
         "tr": "Kurgusal basın manşetleri.",
         "en": "Fictional press headlines.",
-        "ar": "عناوين صحفية افتراضية."
+        "ar": "عناوين صحفية افتراضية.",
+        "de": "Fiktive Presseüberschriften.",
+        "ru": "Вымышленные заголовки прессы."
       },
       "path": "referanslar",
       "icon": "stars",
@@ -111,12 +127,16 @@
       "name": {
         "tr": "Randevu",
         "en": "Book a visit",
-        "ar": "احجز موعدًا"
+        "ar": "احجز موعدًا",
+        "de": "Termin",
+        "ru": "Запись"
       },
       "description": {
         "tr": "Özel gösterim randevusu.",
         "en": "Private viewing appointment.",
-        "ar": "موعد عرض خاص."
+        "ar": "موعد عرض خاص.",
+        "de": "Termin für eine private Vorführung.",
+        "ru": "Запись на частный показ."
       },
       "path": "teklif-al",
       "icon": "request_quote",
@@ -136,7 +156,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -157,7 +179,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],

@@ -3,17 +3,23 @@
   "name": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "description": {
     "tr": "Misyonumuz",
     "en": "Our mission",
-    "ar": "مهمتنا"
+    "ar": "مهمتنا",
+    "de": "Unsere Mission",
+    "ru": "Наша миссия"
   },
   "keyword": {
     "tr": "Misyon",
     "en": "mission, our mission, corporate responsibility",
-    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية"
+    "ar": "الرسالة, رسالتنا, المسؤولية المؤسسية",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "path": "misyon",
   "icon": "flag",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Misyonumuz</h2>\n<p>Altını ayarı, ağırlığı ve işçiliğiyle açıkça göstererek satmak.</p>",
     "en": "<h2>Our mission</h2>\n<p>To sell gold openly, showing its karat, weight and making charge.</p>",
-    "ar": "<h2>مهمتنا</h2>\n<p>أن نبيع الذهب بشفافية مع إظهار عياره ووزنه ومصنعيته.</p>"
+    "ar": "<h2>مهمتنا</h2>\n<p>أن نبيع الذهب بشفافية مع إظهار عياره ووزنه ومصنعيته.</p>",
+    "de": "<h2>Unsere Mission</h2>\n<p>Gold transparent verkaufen, indem Karat, Gewicht und Arbeitslohn klar ausgewiesen werden.</p>",
+    "ru": "<h2>Наша миссия</h2>\n<p>Продавать золото прозрачно, четко указывая пробы, вес и стоимость работы.</p>"
   },
   "title": {
     "tr": "Misyon",
     "en": "Mission",
-    "ar": "المهمة"
+    "ar": "المهمة",
+    "de": "Mission",
+    "ru": "Миссия"
   },
   "date": "2026-11-16T11:23:20.861Z",
   "update": "2026-11-16T11:41:50.562Z",

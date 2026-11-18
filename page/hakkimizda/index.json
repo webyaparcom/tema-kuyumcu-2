@@ -2,7 +2,9 @@
   "name": {
     "tr": "Atölyemiz",
     "en": "Our workshop",
-    "ar": "ورشتنا"
+    "ar": "ورشتنا",
+    "de": "Unsere Werkstatt",
+    "ru": "Наша мастерская"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "1979’dan beri el işçiliği altın takı; fiyat için danışın.",
     "en": "Handmade gold jewellery since 1979; price on request.",
-    "ar": "حليّ ذهبية يدوية الصنع منذ 1979؛ السعر عند الاستفسار."
+    "ar": "حليّ ذهبية يدوية الصنع منذ 1979؛ السعر عند الاستفسار.",
+    "de": "Handgefertigter Goldschmuck seit 1979; Preis auf Anfrage.",
+    "ru": "Ручная золотая ювелирная работа с 1979 года; цена по запросу."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Atölyemiz",
     "en": "Our workshop",
-    "ar": "ورشتنا"
+    "ar": "ورشتنا",
+    "de": "Unsere Werkstatt",
+    "ru": "Наша мастерская"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T11:41:50.545Z",

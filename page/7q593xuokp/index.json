@@ -3,17 +3,23 @@
   "name": {
     "tr": "Ayar ve güvence",
     "en": "Karat and care",
-    "ar": "العيار والضمان"
+    "ar": "العيار والضمان",
+    "de": "Karat & Pflege",
+    "ru": "Карат и уход"
   },
   "description": {
     "tr": "Ayar rehberi ve satış sonrası hizmetler.",
     "en": "Karat guide and after-sales services.",
-    "ar": "دليل العيار وخدمات ما بعد البيع."
+    "ar": "دليل العيار وخدمات ما بعد البيع.",
+    "de": "Größenratgeber und Kundendienst.",
+    "ru": "Размерный гид и послепродажное обслуживание."
   },
   "keyword": {
     "tr": "sss, soru cevap",
     "en": "faq, questions",
-    "ar": "أسئلة وأجوبة"
+    "ar": "أسئلة وأجوبة",
+    "de": "FAQ, Fragen und Antworten",
+    "ru": "FAQ, вопросы и ответы"
   },
   "path": "sorular",
   "icon": "help",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Ayar ve güvence",
     "en": "Karat and care",
-    "ar": "العيار والضمان"
+    "ar": "العيار والضمان",
+    "de": "Karat & Pflege",
+    "ru": "Карат и уход"
   },
   "date": "2026-11-16T11:23:21.001Z",
   "update": "2026-11-16T11:41:50.548Z"

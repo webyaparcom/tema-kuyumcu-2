@@ -3,17 +3,23 @@
   "name": {
     "tr": "Basında",
     "en": "In the press",
-    "ar": "في الصحافة"
+    "ar": "في الصحافة",
+    "de": "In der Presse",
+    "ru": "В прессе"
   },
   "description": {
     "tr": "Kurgusal basın manşetleri.",
     "en": "Fictional press headlines.",
-    "ar": "عناوين صحفية افتراضية."
+    "ar": "عناوين صحفية افتراضية.",
+    "de": "Fiktive Presseüberschriften.",
+    "ru": "Вымышленные заголовки прессы."
   },
   "keyword": {
     "tr": "referans, müşteri yorumu",
     "en": "reference, review",
-    "ar": "مرجع، تقييم"
+    "ar": "مرجع، تقييم",
+    "de": "Referenz, Kundenbewertung",
+    "ru": "рекомендация, отзыв клиента"
   },
   "path": "referanslar",
   "icon": "stars",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Basında",
     "en": "In the press",
-    "ar": "في الصحافة"
+    "ar": "في الصحافة",
+    "de": "In der Presse",
+    "ru": "В прессе"
   },
   "date": "2026-11-16T11:23:21.005Z",
   "update": "2026-11-16T11:41:50.551Z"
